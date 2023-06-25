@@ -1,0 +1,97 @@
+body {
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: 130%;
+  height: 100vh;
+  color: white;
+  padding: 2rem 2rem 2rem 2rem;
+  font-family: "Orbit", sans-serif;
+  font-size: 1rem;
+}
+
+.hidden {
+  display: none;
+}
+
+.display-flex {
+  display: flex;
+}
+
+.login {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.login-input {
+  font-size: 2rem;
+  background: transparent;
+  border: none;
+  border-bottom: 3px solid white;
+  color: white;
+  text-align: center;
+}
+
+.login-input:focus {
+  outline: none;
+}
+
+.main-half {
+  width: 50%;
+}
+
+.item-container {
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 1rem 1rem 1rem 1rem;
+  margin: 1rem;
+  border-radius: 1rem;
+}
+
+.todo-input {
+  font-size: 1rem;
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid white;
+  color: white;
+  width: 90%;
+}
+
+.todo-input:focus {
+  outline: none;
+}
+
+.todo-input::placeholder {
+  color: white;
+}
+
+.todo-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.todo-list li button {
+  background-color: transparent;
+  border: none;
+}
+
+.todo-list li button:hover {
+  cursor: pointer;
+}
+
+.text-align-center {
+  text-align: center;
+}
+.time {
+  display: inline-block;
+  font-size: 4rem;
+  margin: 0;
+}
+
+.quotes-author {
+  text-align: right;
+}

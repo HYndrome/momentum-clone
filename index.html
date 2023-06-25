@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HYndrome</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbit&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="login-page" class="login">
+      <form id="login-form">
+        <p>What is Your Name?</p>
+        <input id="name" class="login-input" type="text" required />
+      </form>
+    </div>
+    <div id="main-page" class="hidden">
+      <h1><span id="username"></span>'s Momentum</h1>
+      <div class="display-flex">
+        <!-- left -->
+        <div class="main-half">
+          <!-- Daily checklist -->
+          <h2>Daily Checklist</h2>
+          <div class="item-container">
+            <form id="daily-todo-form">
+              <input
+                type="text"
+                class="todo-input"
+                required
+                placeholder="오늘 할 일을 입력하세요"
+              />
+            </form>
+            <ul id="daily-todo-list" class="todo-list"></ul>
+          </div>
+          <!-- Weekly checklist -->
+          <h2>Weekly Checklist</h2>
+          <div class="item-container">
+            <form id="weekly-todo-form">
+              <input
+                type="text"
+                class="todo-input"
+                required
+                placeholder="오늘 할 일을 입력하세요"
+              />
+            </form>
+            <ul id="weekly-todo-list" class="todo-list"></ul>
+          </div>
+        </div>
+        <!-- right -->
+        <div class="main-half">
+          <h2>Clock</h2>
+          <div class="item-container text-align-center">
+            <p id="clock-time" class="time"></p>
+            <p id="clock-date"></p>
+          </div>
+          <h2>Weather</h2>
+          <div id="weather" class="item-container text-align-center">
+            <p></p>
+            <p></p>
+          </div>
+          <h2>Quotes</h2>
+          <div id="quotes" class="item-container">
+            <p></p>
+            <p class="quotes-author"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/login.js"></script>
+    <script src="js/todo.js"></script>
+    <script src="js/clock.js"></script>
+    <script src="js/weather.js"></script>
+    <script src="js/quotes.js"></script>
+    <script src="js/background.js"></script>
+  </body>
+</html>
