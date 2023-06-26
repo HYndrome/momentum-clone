@@ -10,6 +10,7 @@ function mainPagePainter() {
     loginForm.classList.add("hidden");
     mainPage.classList.remove("hidden");
     username.innerText = saveUsername;
+    document.title = `${saveUsername}'s Momentum`;
   }
 }
 
